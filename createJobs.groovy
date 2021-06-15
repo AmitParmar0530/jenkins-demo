@@ -6,3 +6,17 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+pipelineJob('chatasync-backend') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/ChatAsyncKafka/chatasync-backend.git'
+                    }
+                    branch 'main'
+                }
+            }
+        }
+    }
+}
