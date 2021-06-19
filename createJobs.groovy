@@ -12,7 +12,7 @@ pipelineJob('chatasync-backend') {
             scm {
                 git {
                     remote {
-                        url 'https://AmitParmar0530@github.com/ChatAsyncKafka/chatasync-backend.git'
+                        url 'git@github.com:ChatAsyncKafka/chatasync-backend.git'
                     }
                     branch 'main'
                 }
